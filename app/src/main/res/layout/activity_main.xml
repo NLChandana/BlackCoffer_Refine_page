@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Availability"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/select"
+        android:padding="10dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        >
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/auto_complete_textview"
+            android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="548dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Add your Status"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"/>
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hi Community! I am open to new connections 😊"
+
+            />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Hyper local Distance"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@color/teal_700"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp">
+            <TextView
+                android:id="@+id/main_sliderTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_margin="5dp"
+                android:text="0"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/main_slider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="100"
+            android:color="@color/teal_700"
+            app:labelBehavior="gone">
+
+        </com.google.android.material.slider.Slider>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Purpose"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coffee"
+
+
+            />
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business"
+
+            />
+<!--        <Button-->
+<!--            android:id="@+id/b3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Hobbies"-->
+<!--            />-->
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friendship"
+            />
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matrimony"
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save and Explore"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
